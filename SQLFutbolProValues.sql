@@ -175,3 +175,28 @@ VALUES
 
 
 
+
+
+INSERT INTO cancha (disponibilidad) VALUES
+(1),(1),(1),(1),(1),(1),
+(1),(1),(1),(1),(1),(1);
+SELECT * FROM cancha;
+
+
+INSERT INTO arbitro (nombre_arbitro, apellido_arbitro) VALUES 
+('Sherwynd', 'Boutflour'),
+('Seymour', 'Poundford'),
+('Lorraine', 'Goodboddy'),
+('Rebeka', 'MacTrustrie'),
+('Hilliary', 'Skewis'),
+('Michaeline', 'Giamo'),
+('Chester', 'Durnill'),
+('Belita', 'Kloska'),
+('Kathi', 'Houseago'),
+('Winnie', 'Strood'),
+('Karie', 'Greatrakes'),
+('Mandel', 'Hampson');
+SELECT * FROM arbitro;
+
+ALTER TABLE partido DROP COLUMN resultado_local;
+ALTER TABLE partido DROP COLUMN resultado_visitante;
